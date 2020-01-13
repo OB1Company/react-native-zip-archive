@@ -351,7 +351,7 @@ public class RNZipArchiveModule extends ReactContextBaseJavaModule {
           parameters.setEncryptionMethod(Zip4jConstants.ENC_METHOD_STANDARD);
           Log.d(TAG, "Standard Encryption");
         } else {
-          parameters.setEncryptionMethod(Zip4jConstants.ENC_METHOD_STANDARD);
+          parameters.setEncryptionMethod(Zip4jConstants.ENC_NO_ENCRYPTION);
           Log.d(TAG, "Encryption type not supported default to Standard Encryption");
         }
         parameters.setPassword(password);
